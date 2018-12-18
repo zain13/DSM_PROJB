@@ -1,0 +1,177 @@
+java -cp /usr/local/ycsb-0.14.0/mongodb-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-core-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongo-java-driver-3.6.3.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=600000 -load
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=600000 -load
+YCSB Client 0.14.0
+
+Loading workload...
+Starting test.
+2018-12-17 16:04:12:759 0 sec: 0 operations; est completion in 0 second 
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-17 16:04:22:695 10 sec: 27189 operations; 2718.9 current ops/sec; est completion in 3 minutes [INSERT: Count=27193, Max=3809279, Min=111, Avg=340.72, 90=238, 99=532, 99.9=2931, 99.99=10335] 
+2018-12-17 16:04:32:694 20 sec: 90101 operations; 6291.2 current ops/sec; est completion in 1 minute [INSERT: Count=62908, Max=994303, Min=87, Avg=156.02, 90=163, 99=247, 99.9=1113, 99.99=6931] 
+2018-12-17 16:04:42:694 30 sec: 159843 operations; 6974.2 current ops/sec; est completion in 1 minute [INSERT: Count=69742, Max=911359, Min=88, Avg=141.37, 90=150, 99=234, 99.9=1280, 99.99=5483] 
+2018-12-17 16:04:52:694 40 sec: 223990 operations; 6414.7 current ops/sec; est completion in 1 minute [INSERT: Count=64147, Max=1162239, Min=91, Avg=153.81, 90=161, 99=253, 99.9=1389, 99.99=6691] 
+2018-12-17 16:05:02:695 50 sec: 289739 operations; 6574.9 current ops/sec; est completion in 54 seconds [INSERT: Count=65749, Max=9015, Min=88, Avg=135.26, 90=164, 99=249, 99.9=1515, 99.99=6851] 
+2018-12-17 16:05:12:695 60 sec: 311590 operations; 2185.1 current ops/sec; est completion in 56 seconds [INSERT: Count=21851, Max=7782399, Min=99, Avg=500.17, 90=173, 99=287, 99.9=2109, 99.99=7083] 
+2018-12-17 16:05:22:695 70 sec: 371497 operations; 5990.7 current ops/sec; est completion in 44 seconds [INSERT: Count=59907, Max=12783, Min=90, Avg=142.26, 90=171, 99=262, 99.9=1324, 99.99=8003] 
+2018-12-17 16:05:32:694 80 sec: 431491 operations; 5999.4 current ops/sec; est completion in 32 seconds [INSERT: Count=59994, Max=2535423, Min=94, Avg=187.17, 90=175, 99=273, 99.9=1702, 99.99=7207] 
+2018-12-17 16:05:42:694 90 sec: 479783 operations; 4829.2 current ops/sec; est completion in 23 seconds [INSERT: Count=48292, Max=3008511, Min=95, Avg=204.91, 90=170, 99=268, 99.9=1776, 99.99=8047] 
+2018-12-17 16:05:52:695 100 sec: 534973 operations; 5519 current ops/sec; est completion in 13 seconds [INSERT: Count=55190, Max=15615, Min=89, Avg=136.73, 90=162, 99=274, 99.9=1495, 99.99=7431] 
+2018-12-17 16:06:02:695 110 sec: 594824 operations; 5985.1 current ops/sec; est completion in 1 second [INSERT: Count=59851, Max=3516415, Min=90, Avg=198.8, 90=166, 99=276, 99.9=2105, 99.99=7047] 
+2018-12-17 16:06:04:231 111 sec: 600000 operations; 3367.6 current ops/sec; [CLEANUP: Count=1, Max=2121, Min=2120, Avg=2121, 90=2121, 99=2121, 99.9=2121, 99.99=2121] [INSERT: Count=5176, Max=1116159, Min=95, Avg=355.14, 90=169, 99=255, 99.9=1354, 99.99=3021] 
+[OVERALL], RunTime(ms), 111537
+[OVERALL], Throughput(ops/sec), 5379.380833266091
+[TOTAL_GCS_PS_Scavenge], Count, 337
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 375
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.3362113020791307
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 337
+[TOTAL_GC_TIME], Time(ms), 375
+[TOTAL_GC_TIME_%], Time(%), 0.3362113020791307
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 2121.0
+[CLEANUP], MinLatency(us), 2120
+[CLEANUP], MaxLatency(us), 2121
+[CLEANUP], 95thPercentileLatency(us), 2121
+[CLEANUP], 99thPercentileLatency(us), 2121
+[INSERT], Operations, 600000
+[INSERT], AverageLatency(us), 182.59702166666668
+[INSERT], MinLatency(us), 87
+[INSERT], MaxLatency(us), 7782399
+[INSERT], 95thPercentileLatency(us), 194
+[INSERT], 99thPercentileLatency(us), 279
+[INSERT], Return=OK, 600000
+java -cp /usr/local/ycsb-0.14.0/mongodb-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-core-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongo-java-driver-3.6.3.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=600000 -load
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=600000 -load
+YCSB Client 0.14.0
+
+Loading workload...
+Starting test.
+2018-12-17 17:34:57:282 0 sec: 0 operations; est completion in 0 second 
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-17 17:35:07:237 10 sec: 48259 operations; 4825.9 current ops/sec; est completion in 1 minute [INSERT: Count=48259, Max=604671, Min=104, Avg=189.99, 90=223, 99=479, 99.9=2937, 99.99=10183] 
+2018-12-17 17:35:17:237 20 sec: 114318 operations; 6605.9 current ops/sec; est completion in 1 minute [INSERT: Count=66059, Max=21791, Min=94, Avg=144.67, 90=177, 99=273, 99.9=977, 99.99=5423] 
+2018-12-17 17:35:27:237 30 sec: 159624 operations; 4530.6 current ops/sec; est completion in 1 minute [INSERT: Count=45306, Max=3940351, Min=93, Avg=224.63, 90=166, 99=263, 99.9=1119, 99.99=4339] 
+2018-12-17 17:35:37:237 40 sec: 231977 operations; 7235.3 current ops/sec; est completion in 1 minute [INSERT: Count=72353, Max=27103, Min=96, Avg=135.99, 90=160, 99=258, 99.9=1256, 99.99=7331] 
+2018-12-17 17:35:47:237 50 sec: 277760 operations; 4578.3 current ops/sec; est completion in 59 seconds [INSERT: Count=45783, Max=12023, Min=96, Avg=145.98, 90=176, 99=267, 99.9=1049, 99.99=6171] 
+2018-12-17 17:35:57:237 60 sec: 338705 operations; 6094.5 current ops/sec; est completion in 47 seconds [INSERT: Count=60945, Max=4194303, Min=98, Avg=214.63, 90=168, 99=263, 99.9=1289, 99.99=5759] 
+2018-12-17 17:36:07:237 70 sec: 403964 operations; 6525.9 current ops/sec; est completion in 34 seconds [INSERT: Count=65259, Max=820223, Min=92, Avg=151.02, 90=165, 99=261, 99.9=1226, 99.99=5923] 
+2018-12-17 17:36:17:237 80 sec: 441311 operations; 3734.7 current ops/sec; est completion in 29 seconds [INSERT: Count=37347, Max=8887, Min=94, Avg=148.31, 90=178, 99=296, 99.9=1860, 99.99=7639] 
+2018-12-17 17:36:27:237 90 sec: 486786 operations; 4547.5 current ops/sec; est completion in 21 seconds [INSERT: Count=45475, Max=7823359, Min=94, Avg=313.74, 90=171, 99=271, 99.9=1367, 99.99=6555] 
+2018-12-17 17:36:37:237 100 sec: 523115 operations; 3632.9 current ops/sec; est completion in 15 seconds [INSERT: Count=36329, Max=436479, Min=97, Avg=168, 90=185, 99=306, 99.9=1939, 99.99=7235] 
+2018-12-17 17:36:47:237 110 sec: 586332 operations; 6321.7 current ops/sec; est completion in 3 second [INSERT: Count=63217, Max=4567039, Min=94, Avg=216.33, 90=168, 99=268, 99.9=2593, 99.99=6819] 
+2018-12-17 17:36:49:319 112 sec: 600000 operations; 6561.69 current ops/sec; [CLEANUP: Count=1, Max=1966, Min=1966, Avg=1966, 90=1966, 99=1966, 99.9=1966, 99.99=1966] [INSERT: Count=13668, Max=13063, Min=93, Avg=150.11, 90=167, 99=266, 99.9=4883, 99.99=8647] 
+[OVERALL], RunTime(ms), 112089
+[OVERALL], Throughput(ops/sec), 5352.889221957552
+[TOTAL_GCS_PS_Scavenge], Count, 264
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 308
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.2747816467271543
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 264
+[TOTAL_GC_TIME], Time(ms), 308
+[TOTAL_GC_TIME_%], Time(%), 0.2747816467271543
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 1966.0
+[CLEANUP], MinLatency(us), 1966
+[CLEANUP], MaxLatency(us), 1966
+[CLEANUP], 95thPercentileLatency(us), 1966
+[CLEANUP], 99thPercentileLatency(us), 1966
+[INSERT], Operations, 600000
+[INSERT], AverageLatency(us), 183.32947333333334
+[INSERT], MinLatency(us), 92
+[INSERT], MaxLatency(us), 7823359
+[INSERT], 95thPercentileLatency(us), 199
+[INSERT], 99thPercentileLatency(us), 292
+[INSERT], Return=OK, 600000
+java -cp /usr/local/ycsb-0.14.0/mongodb-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-core-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongo-java-driver-3.6.3.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=600000 -load
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=600000 -load
+YCSB Client 0.14.0
+
+Loading workload...
+Starting test.
+2018-12-17 19:54:25:238 0 sec: 0 operations; est completion in 0 second 
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-17 19:54:35:177 10 sec: 36393 operations; 3639.3 current ops/sec; est completion in 2 minutes [INSERT: Count=36393, Max=2006015, Min=102, Avg=252.99, 90=245, 99=487, 99.9=3319, 99.99=9735] 
+2018-12-17 19:54:45:177 20 sec: 109724 operations; 7333.1 current ops/sec; est completion in 1 minute [INSERT: Count=73331, Max=111423, Min=88, Avg=133.36, 90=159, 99=240, 99.9=1147, 99.99=4483] 
+2018-12-17 19:54:55:177 30 sec: 184334 operations; 7461 current ops/sec; est completion in 1 minute [INSERT: Count=74610, Max=11687, Min=89, Avg=129.61, 90=152, 99=238, 99.9=1261, 99.99=5327] 
+2018-12-17 19:55:05:177 40 sec: 248477 operations; 6414.3 current ops/sec; est completion in 57 seconds [INSERT: Count=64143, Max=1089535, Min=94, Avg=156.49, 90=166, 99=261, 99.9=1231, 99.99=7171] 
+2018-12-17 19:55:15:177 50 sec: 286984 operations; 3850.7 current ops/sec; est completion in 55 seconds [INSERT: Count=38507, Max=4280319, Min=94, Avg=257.44, 90=181, 99=281, 99.9=3017, 99.99=8751] 
+2018-12-17 19:55:25:177 60 sec: 347916 operations; 6093.2 current ops/sec; est completion in 44 seconds [INSERT: Count=60932, Max=22415, Min=93, Avg=153.99, 90=182, 99=294, 99.9=4147, 99.99=11231] 
+2018-12-17 19:55:35:177 70 sec: 417399 operations; 6948.3 current ops/sec; est completion in 31 seconds [INSERT: Count=69483, Max=513279, Min=91, Avg=148.56, 90=167, 99=269, 99.9=1579, 99.99=6819] 
+2018-12-17 19:55:45:177 80 sec: 440771 operations; 2337.2 current ops/sec; est completion in 29 seconds [INSERT: Count=23372, Max=6045695, Min=96, Avg=425.45, 90=176, 99=324, 99.9=4023, 99.99=46367] 
+2018-12-17 19:55:55:177 90 sec: 508198 operations; 6742.7 current ops/sec; est completion in 17 seconds [INSERT: Count=67427, Max=28943, Min=95, Avg=146.06, 90=178, 99=310, 99.9=1215, 99.99=6879] 
+2018-12-17 19:56:05:177 100 sec: 566832 operations; 5863.4 current ops/sec; est completion in 6 second [INSERT: Count=58634, Max=1028607, Min=97, Avg=168.28, 90=181, 99=326, 99.9=1276, 99.99=6859] 
+2018-12-17 19:56:12:835 107 sec: 600000 operations; 4331.16 current ops/sec; [CLEANUP: Count=1, Max=2233, Min=2232, Avg=2233, 90=2233, 99=2233, 99.9=2233, 99.99=2233] [INSERT: Count=33168, Max=2662399, Min=91, Avg=228.53, 90=174, 99=270, 99.9=1283, 99.99=7867] 
+[OVERALL], RunTime(ms), 107662
+[OVERALL], Throughput(ops/sec), 5572.9969720049785
+[TOTAL_GCS_PS_Scavenge], Count, 331
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 310
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.2879381768869239
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 331
+[TOTAL_GC_TIME], Time(ms), 310
+[TOTAL_GC_TIME_%], Time(%), 0.2879381768869239
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 2233.0
+[CLEANUP], MinLatency(us), 2232
+[CLEANUP], MaxLatency(us), 2233
+[CLEANUP], 95thPercentileLatency(us), 2233
+[CLEANUP], 99thPercentileLatency(us), 2233
+[INSERT], Operations, 600000
+[INSERT], AverageLatency(us), 175.91840166666665
+[INSERT], MinLatency(us), 88
+[INSERT], MaxLatency(us), 6045695
+[INSERT], 95thPercentileLatency(us), 205
+[INSERT], 99thPercentileLatency(us), 300
+[INSERT], Return=OK, 600000
+java -cp /usr/local/ycsb-0.14.0/mongodb-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-core-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongo-java-driver-3.6.3.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=600000 -load
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=600000 -load
+YCSB Client 0.14.0
+
+Loading workload...
+Starting test.
+2018-12-17 22:11:26:780 0 sec: 0 operations; est completion in 0 second 
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-17 22:11:36:726 10 sec: 42249 operations; 4224.48 current ops/sec; est completion in 2 minutes [INSERT: Count=42249, Max=1482751, Min=92, Avg=216.66, 90=234, 99=481, 99.9=2963, 99.99=11559] 
+2018-12-17 22:11:46:726 20 sec: 103958 operations; 6170.9 current ops/sec; est completion in 1 minute [INSERT: Count=61709, Max=1497087, Min=91, Avg=159.33, 90=166, 99=244, 99.9=752, 99.99=6423] 
+2018-12-17 22:11:56:726 30 sec: 173013 operations; 6905.5 current ops/sec; est completion in 1 minute [INSERT: Count=69055, Max=12367, Min=90, Avg=134.97, 90=163, 99=246, 99.9=1217, 99.99=5255] 
+2018-12-17 22:12:06:726 40 sec: 243329 operations; 7032.3 current ops/sec; est completion in 59 seconds [INSERT: Count=70316, Max=996351, Min=88, Avg=147.91, 90=163, 99=257, 99.9=1156, 99.99=6371] 
+2018-12-17 22:12:16:726 50 sec: 302704 operations; 5937.5 current ops/sec; est completion in 50 seconds [INSERT: Count=59375, Max=1681407, Min=88, Avg=166.35, 90=166, 99=267, 99.9=1186, 99.99=6647] 
+2018-12-17 22:12:26:726 60 sec: 371241 operations; 6853.01 current ops/sec; est completion in 37 seconds [INSERT: Count=68537, Max=117183, Min=93, Avg=143.83, 90=169, 99=266, 99.9=1272, 99.99=6407] 
+2018-12-17 22:12:36:726 70 sec: 432506 operations; 6126.5 current ops/sec; est completion in 28 seconds [INSERT: Count=61265, Max=1465343, Min=89, Avg=161.25, 90=167, 99=261, 99.9=1194, 99.99=6199] 
+2018-12-17 22:12:46:726 80 sec: 500901 operations; 6839.5 current ops/sec; est completion in 16 seconds [INSERT: Count=68395, Max=33599, Min=90, Avg=144.25, 90=172, 99=295, 99.9=1324, 99.99=6647] 
+2018-12-17 22:12:56:726 90 sec: 567269 operations; 6636.8 current ops/sec; est completion in 6 second [INSERT: Count=66371, Max=306175, Min=91, Avg=148.66, 90=163, 99=260, 99.9=2051, 99.99=6843] 
+2018-12-17 22:13:06:114 99 sec: 600000 operations; 3486.47 current ops/sec; [CLEANUP: Count=1, Max=3135, Min=3134, Avg=3135, 90=3135, 99=3135, 99.9=3135, 99.99=3135] [INSERT: Count=32728, Max=4259839, Min=91, Avg=284.54, 90=188, 99=337, 99.9=1554, 99.99=6467] 
+[OVERALL], RunTime(ms), 99395
+[OVERALL], Throughput(ops/sec), 6036.520951758137
+[TOTAL_GCS_PS_Scavenge], Count, 329
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 311
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.3128930026661301
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 329
+[TOTAL_GC_TIME], Time(ms), 311
+[TOTAL_GC_TIME_%], Time(%), 0.3128930026661301
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 3135.0
+[CLEANUP], MinLatency(us), 3134
+[CLEANUP], MaxLatency(us), 3135
+[CLEANUP], 95thPercentileLatency(us), 3135
+[CLEANUP], 99thPercentileLatency(us), 3135
+[INSERT], Operations, 600000
+[INSERT], AverageLatency(us), 162.27573
+[INSERT], MinLatency(us), 88
+[INSERT], MaxLatency(us), 4259839
+[INSERT], 95thPercentileLatency(us), 195
+[INSERT], 99thPercentileLatency(us), 290
+[INSERT], Return=OK, 600000

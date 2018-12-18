@@ -1,0 +1,44 @@
+java -cp /usr/local/ycsb-0.14.0/mongodb-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-core-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongo-java-driver-3.6.3.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloadb -p recordcount=250000 -p operationcount=250000 -t
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloadb -p recordcount=250000 -p operationcount=250000 -t
+YCSB Client 0.14.0
+
+Loading workload...
+Starting test.
+2018-12-09 05:38:49:077 0 sec: 0 operations; est completion in 0 second 
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-09 05:38:59:053 10 sec: 54226 operations; 5422.06 current ops/sec; est completion in 37 seconds [READ: Count=51474, Max=106559, Min=89, Avg=160.87, 90=200, 99=457, 99.9=2777, 99.99=12391] [UPDATE: Count=2752, Max=15527, Min=137, Avg=302.98, 90=368, 99=2065, 99.9=7747, 99.99=15527] 
+2018-12-09 05:39:09:052 20 sec: 131835 operations; 7761.68 current ops/sec; est completion in 18 seconds [READ: Count=73710, Max=15495, Min=86, Avg=122.68, 90=144, 99=206, 99.9=1011, 99.99=7091] [UPDATE: Count=3899, Max=10519, Min=128, Avg=191.93, 90=220, 99=369, 99.9=5155, 99.99=10519] 
+2018-12-09 05:39:19:052 30 sec: 213159 operations; 8132.4 current ops/sec; est completion in 6 second [READ: Count=77276, Max=16703, Min=92, Avg=118.38, 90=133, 99=188, 99.9=1021, 99.99=5771] [UPDATE: Count=4048, Max=6387, Min=129, Avg=167.06, 90=183, 99=303, 99.9=4215, 99.99=6387] 
+2018-12-09 05:39:24:042 34 sec: 250000 operations; 7382.97 current ops/sec; [READ: Count=35057, Max=10423, Min=97, Avg=130.7, 90=155, 99=250, 99.9=1282, 99.99=5791] [CLEANUP: Count=1, Max=1825, Min=1825, Avg=1825, 90=1825, 99=1825, 99.9=1825, 99.99=1825] [UPDATE: Count=1784, Max=7639, Min=134, Avg=177.41, 90=210, 99=349, 99.9=1128, 99.99=7639] 
+[OVERALL], RunTime(ms), 34990
+[OVERALL], Throughput(ops/sec), 7144.898542440697
+[TOTAL_GCS_PS_Scavenge], Count, 167
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 187
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.5344384109745642
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 167
+[TOTAL_GC_TIME], Time(ms), 187
+[TOTAL_GC_TIME_%], Time(%), 0.5344384109745642
+[READ], Operations, 237517
+[READ], AverageLatency(us), 130.7415721822017
+[READ], MinLatency(us), 86
+[READ], MaxLatency(us), 106559
+[READ], 95thPercentileLatency(us), 182
+[READ], 99thPercentileLatency(us), 275
+[READ], Return=OK, 237517
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 1825.0
+[CLEANUP], MinLatency(us), 1825
+[CLEANUP], MaxLatency(us), 1825
+[CLEANUP], 95thPercentileLatency(us), 1825
+[CLEANUP], 99thPercentileLatency(us), 1825
+[UPDATE], Operations, 12483
+[UPDATE], AverageLatency(us), 206.27132900745013
+[UPDATE], MinLatency(us), 128
+[UPDATE], MaxLatency(us), 15527
+[UPDATE], 95thPercentileLatency(us), 314
+[UPDATE], 99thPercentileLatency(us), 580
+[UPDATE], Return=OK, 12483

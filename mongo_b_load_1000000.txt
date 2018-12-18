@@ -53,3 +53,34 @@ DBWrapper: report latency for each error is false and specific error codes to tr
 2018-12-09 05:15:36:540 440 sec: 487333 operations; 6304.8 current ops/sec; est completion in 7 minutes [INSERT: Count=63048, Max=1521663, Min=94, Avg=156.66, 90=158, 99=281, 99.9=1211, 99.99=5963] 
 2018-12-09 05:15:46:540 450 sec: 562322 operations; 7498.9 current ops/sec; est completion in 5 minutes [INSERT: Count=74989, Max=424447, Min=97, Avg=131.44, 90=144, 99=236, 99.9=1128, 99.99=6531] 
 2018-12-09 05:15:56:540 460 sec: 635675 operations; 7335.3 current ops/sec; est completion in 4 minutes [INSERT: Count=73353, Max=287743, Min=98, Avg=134.41, 90=151, 99=279, 99.9=1337, 99.99=6587] 
+2018-12-09 05:16:06:540 470 sec: 706566 operations; 7089.1 current ops/sec; est completion in 3 minutes [INSERT: Count=70891, Max=20079, Min=93, Avg=139.06, 90=165, 99=302, 99.9=2799, 99.99=8007] 
+2018-12-09 05:16:16:540 480 sec: 719536 operations; 1297 current ops/sec; est completion in 3 minutes [INSERT: Count=12970, Max=6991871, Min=97, Avg=768.75, 90=207, 99=432, 99.9=3275, 99.99=929791] 
+2018-12-09 05:16:26:540 490 sec: 788514 operations; 6897.8 current ops/sec; est completion in 2 minutes [INSERT: Count=68978, Max=11919, Min=96, Avg=142.87, 90=178, 99=354, 99.9=1281, 99.99=7011] 
+2018-12-09 05:16:36:540 500 sec: 862002 operations; 7348.8 current ops/sec; est completion in 1 minute [INSERT: Count=73488, Max=127103, Min=94, Avg=134.17, 90=152, 99=282, 99.9=1797, 99.99=8079] 
+2018-12-09 05:16:46:540 510 sec: 915682 operations; 5368 current ops/sec; est completion in 47 seconds [INSERT: Count=53680, Max=2435071, Min=99, Avg=184.27, 90=154, 99=267, 99.9=2891, 99.99=14759] 
+2018-12-09 05:16:56:540 520 sec: 985101 operations; 6941.9 current ops/sec; est completion in 8 second [INSERT: Count=69419, Max=126719, Min=100, Avg=142.1, 90=161, 99=354, 99.9=2361, 99.99=9231] 
+2018-12-09 05:16:58:429 521 sec: 1000000 operations; 7887.24 current ops/sec; [CLEANUP: Count=1, Max=10711, Min=10704, Avg=10708, 90=10711, 99=10711, 99.9=10711, 99.99=10711] [INSERT: Count=14899, Max=7811, Min=96, Avg=124.15, 90=138, 99=241, 99.9=1177, 99.99=6823] 
+[OVERALL], RunTime(ms), 521892
+[OVERALL], Throughput(ops/sec), 1916.1052478290528
+[TOTAL_GCS_PS_Scavenge], Count, 628
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 1130
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.21651989300468297
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 628
+[TOTAL_GC_TIME], Time(ms), 1130
+[TOTAL_GC_TIME_%], Time(%), 0.21651989300468297
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 10708.0
+[CLEANUP], MinLatency(us), 10704
+[CLEANUP], MaxLatency(us), 10711
+[CLEANUP], 95thPercentileLatency(us), 10711
+[CLEANUP], 99thPercentileLatency(us), 10711
+[INSERT], Operations, 1000000
+[INSERT], AverageLatency(us), 450.215161
+[INSERT], MinLatency(us), 93
+[INSERT], MaxLatency(us), 37126143
+[INSERT], 95thPercentileLatency(us), 998
+[INSERT], 99thPercentileLatency(us), 2425
+[INSERT], Return=OK, 1000000

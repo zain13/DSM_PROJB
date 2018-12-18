@@ -342,3 +342,179 @@ DBWrapper: report latency for each error is false and specific error codes to tr
 [INSERT], 95thPercentileLatency(us), 1933
 [INSERT], 99thPercentileLatency(us), 4355
 [INSERT], Return=OK, 50000
+java -cp /usr/local/ycsb-0.14.0/mongodb-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-core-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongo-java-driver-3.6.3.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=50000 -load
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=50000 -load
+YCSB Client 0.14.0
+
+Loading workload...
+Starting test.
+2018-12-17 16:19:55:655 0 sec: 0 operations; est completion in 0 second 
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-17 16:20:05:591 10 sec: 36938 operations; 3693.8 current ops/sec; est completion in 4 second [INSERT: Count=36938, Max=1903615, Min=93, Avg=244.42, 90=259, 99=446, 99.9=2791, 99.99=9071] 
+2018-12-17 16:20:07:722 12 sec: 50000 operations; 6126.64 current ops/sec; [CLEANUP: Count=1, Max=3189, Min=3188, Avg=3189, 90=3189, 99=3189, 99.9=3189, 99.99=3189] [INSERT: Count=13062, Max=36351, Min=93, Avg=157.25, 90=180, 99=289, 99.9=3625, 99.99=9727] 
+[OVERALL], RunTime(ms), 12134
+[OVERALL], Throughput(ops/sec), 4120.6527113894845
+[TOTAL_GCS_PS_Scavenge], Count, 14
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 47
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.3873413548706115
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 14
+[TOTAL_GC_TIME], Time(ms), 47
+[TOTAL_GC_TIME_%], Time(%), 0.3873413548706115
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 3189.0
+[CLEANUP], MinLatency(us), 3188
+[CLEANUP], MaxLatency(us), 3189
+[CLEANUP], 95thPercentileLatency(us), 3189
+[CLEANUP], 99thPercentileLatency(us), 3189
+[INSERT], Operations, 50000
+[INSERT], AverageLatency(us), 221.64906
+[INSERT], MinLatency(us), 93
+[INSERT], MaxLatency(us), 1903615
+[INSERT], 95thPercentileLatency(us), 283
+[INSERT], 99thPercentileLatency(us), 423
+[INSERT], Return=OK, 50000
+java -cp /usr/local/ycsb-0.14.0/mongodb-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-core-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongo-java-driver-3.6.3.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=50000 -load
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=50000 -load
+YCSB Client 0.14.0
+
+Loading workload...
+Starting test.
+2018-12-17 17:50:35:010 0 sec: 0 operations; est completion in 0 second 
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-17 17:50:44:930 10 sec: 30653 operations; 3065.3 current ops/sec; est completion in 7 second [INSERT: Count=30653, Max=1815551, Min=100, Avg=298.85, 90=272, 99=558, 99.9=3621, 99.99=9775] 
+2018-12-17 17:50:47:981 13 sec: 50000 operations; 6341.2 current ops/sec; [CLEANUP: Count=1, Max=2633, Min=2632, Avg=2633, 90=2633, 99=2633, 99.9=2633, 99.99=2633] [INSERT: Count=19347, Max=8503, Min=98, Avg=151.76, 90=178, 99=272, 99.9=2979, 99.99=5295] 
+[OVERALL], RunTime(ms), 13052
+[OVERALL], Throughput(ops/sec), 3830.8305240576155
+[TOTAL_GCS_PS_Scavenge], Count, 9
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 61
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.46736132393502916
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 9
+[TOTAL_GC_TIME], Time(ms), 61
+[TOTAL_GC_TIME_%], Time(%), 0.46736132393502916
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 2633.0
+[CLEANUP], MinLatency(us), 2632
+[CLEANUP], MaxLatency(us), 2633
+[CLEANUP], 95thPercentileLatency(us), 2633
+[CLEANUP], 99thPercentileLatency(us), 2633
+[INSERT], Operations, 50000
+[INSERT], AverageLatency(us), 241.93578
+[INSERT], MinLatency(us), 98
+[INSERT], MaxLatency(us), 1815551
+[INSERT], 95thPercentileLatency(us), 291
+[INSERT], 99thPercentileLatency(us), 476
+[INSERT], Return=OK, 50000
+java -cp /usr/local/ycsb-0.14.0/mongodb-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-core-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongo-java-driver-3.6.3.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=50000 -load
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=50000 -load
+YCSB Client 0.14.0
+
+Loading workload...
+Starting test.
+2018-12-17 20:09:57:923 0 sec: 0 operations; est completion in 0 second 
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-17 20:10:07:880 10 sec: 30433 operations; 3043.3 current ops/sec; est completion in 7 second [INSERT: Count=30433, Max=3063807, Min=112, Avg=301.88, 90=232, 99=549, 99.9=3279, 99.99=9015] 
+2018-12-17 20:10:11:915 14 sec: 50000 operations; 4849.32 current ops/sec; [CLEANUP: Count=1, Max=2073, Min=2072, Avg=2073, 90=2073, 99=2073, 99.9=2073, 99.99=2073] [INSERT: Count=19567, Max=1412095, Min=98, Avg=202.49, 90=157, 99=233, 99.9=1039, 99.99=11175] 
+[OVERALL], RunTime(ms), 14039
+[OVERALL], Throughput(ops/sec), 3561.5072298596765
+[TOTAL_GCS_PS_Scavenge], Count, 13
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 44
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.31341263622765153
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 13
+[TOTAL_GC_TIME], Time(ms), 44
+[TOTAL_GC_TIME_%], Time(%), 0.31341263622765153
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 2073.0
+[CLEANUP], MinLatency(us), 2072
+[CLEANUP], MaxLatency(us), 2073
+[CLEANUP], 95thPercentileLatency(us), 2073
+[CLEANUP], 99thPercentileLatency(us), 2073
+[INSERT], Operations, 50000
+[INSERT], AverageLatency(us), 262.9856
+[INSERT], MinLatency(us), 98
+[INSERT], MaxLatency(us), 3063807
+[INSERT], 95thPercentileLatency(us), 251
+[INSERT], 99thPercentileLatency(us), 431
+[INSERT], Return=OK, 50000
+java -cp /usr/local/ycsb-0.14.0/mongodb-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-core-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongo-java-driver-3.6.3.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=50000 -load
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=50000 -load
+YCSB Client 0.14.0
+
+Loading workload...
+Starting test.
+2018-12-17 22:27:12:557 0 sec: 0 operations; est completion in 0 second 
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-17 22:27:22:509 10 sec: 42910 operations; 4291 current ops/sec; est completion in 2 second [INSERT: Count=42910, Max=1403903, Min=91, Avg=211.18, 90=237, 99=482, 99.9=2279, 99.99=8423] 
+2018-12-17 22:27:23:655 11 sec: 50000 operations; 6186.74 current ops/sec; [CLEANUP: Count=1, Max=2209, Min=2208, Avg=2209, 90=2209, 99=2209, 99.9=2209, 99.99=2209] [INSERT: Count=7090, Max=46623, Min=98, Avg=154.95, 90=193, 99=285, 99.9=1643, 99.99=7359] 
+[OVERALL], RunTime(ms), 11152
+[OVERALL], Throughput(ops/sec), 4483.500717360115
+[TOTAL_GCS_PS_Scavenge], Count, 13
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 50
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.44835007173601144
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 13
+[TOTAL_GC_TIME], Time(ms), 50
+[TOTAL_GC_TIME_%], Time(%), 0.44835007173601144
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 2209.0
+[CLEANUP], MinLatency(us), 2208
+[CLEANUP], MaxLatency(us), 2209
+[CLEANUP], 95thPercentileLatency(us), 2209
+[CLEANUP], 99thPercentileLatency(us), 2209
+[INSERT], Operations, 50000
+[INSERT], AverageLatency(us), 203.20266
+[INSERT], MinLatency(us), 91
+[INSERT], MaxLatency(us), 1403903
+[INSERT], 95thPercentileLatency(us), 269
+[INSERT], 99thPercentileLatency(us), 462
+[INSERT], Return=OK, 50000
+java -cp /usr/local/ycsb-0.14.0/mongodb-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/logback-core-1.1.2.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/usr/local/ycsb-0.14.0/mongodb-binding/lib/mongo-java-driver-3.6.3.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=50000 -load
+Command line: -db com.yahoo.ycsb.db.MongoDbClient -s -P workloads/workloada -p recordcount=50000 -load
+YCSB Client 0.14.0
+
+Loading workload...
+Starting test.
+2018-12-18 00:03:45:219 0 sec: 0 operations; est completion in 0 second 
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+2018-12-18 00:03:55:155 10 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-18 00:04:05:155 20 sec: 49834 operations; 4983.4 current ops/sec; est completion in 1 second [INSERT: Count=49834, Max=9609215, Min=99, Avg=384.37, 90=219, 99=450, 99.9=3103, 99.99=8551] 
+2018-12-18 00:04:05:195 20 sec: 50000 operations; 4150 current ops/sec; [CLEANUP: Count=1, Max=1734, Min=1734, Avg=1734, 90=1734, 99=1734, 99.9=1734, 99.99=1734] [INSERT: Count=166, Max=6131, Min=112, Avg=168.96, 90=146, 99=484, 99.9=6131, 99.99=6131] 
+[OVERALL], RunTime(ms), 20041
+[OVERALL], Throughput(ops/sec), 2494.8854847562498
+[TOTAL_GCS_PS_Scavenge], Count, 13
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 53
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.26445786138416244
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 13
+[TOTAL_GC_TIME], Time(ms), 53
+[TOTAL_GC_TIME_%], Time(%), 0.26445786138416244
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 1734.0
+[CLEANUP], MinLatency(us), 1734
+[CLEANUP], MaxLatency(us), 1734
+[CLEANUP], 95thPercentileLatency(us), 1734
+[CLEANUP], 99thPercentileLatency(us), 1734
+[INSERT], Operations, 50000
+[INSERT], AverageLatency(us), 383.6501
+[INSERT], MinLatency(us), 99
+[INSERT], MaxLatency(us), 9609215
+[INSERT], 95thPercentileLatency(us), 263
+[INSERT], 99thPercentileLatency(us), 451
+[INSERT], Return=OK, 50000

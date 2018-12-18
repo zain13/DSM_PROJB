@@ -1,0 +1,1065 @@
+[WARN]  The 'hbase10' client has been deprecated because HBase 1.0 is EOM. If you are using HBase 1.2+ try using the 'hbase12' client instead.
+java -cp /usr/local/ycsb-0.14.0/hbase10-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/protobuf-java-2.5.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-compress-1.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/paranamer-2.3.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/findbugs-annotations-1.3.9-1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-lang-2.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-httpclient-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jaxb-api-2.2.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/htrace-core-3.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-util-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-net-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/log4j-1.2.17.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jcodings-1.0.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-codec-1.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-auth-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-logging-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-cli-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jetty-util-6.1.26.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-annotations-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-mapper-asl-1.8.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-all-4.0.23.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpcore-4.2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-math3-3.1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-protocol-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/guava-12.0.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-el-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/activation-1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-annotations-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-collections-3.2.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-mapreduce-client-core-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsr305-1.3.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-log4j12-1.7.7.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-configuration-1.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-1.7.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-digester-1.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/avro-1.7.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xz-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/snappy-java-1.0.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-io-2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/joni-2.1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-client-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase10-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-3.6.2.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-common-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpclient-4.2.5.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsch-0.1.42.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-api-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xmlenc-0.52.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-core-1.8.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/stax-api-1.0-2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/zookeeper-3.4.6.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=500000 -p columnfamily=family -load
+Command line: -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=500000 -p columnfamily=family -load
+YCSB Client 0.14.0
+
+Loading workload...
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting test.
+2018-12-17 16:38:14:928 0 sec: 0 operations; est completion in 0 second 
+2018-12-17 16:38:24:904 10 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:38:34:904 20 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:38:44:904 30 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:38:54:904 40 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:39:04:904 50 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:39:14:904 60 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:39:24:904 70 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:39:34:904 80 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:39:44:904 90 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:39:54:904 100 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:40:04:904 110 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:40:14:904 120 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:40:24:904 130 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:40:34:904 140 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:40:44:904 150 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:40:54:904 160 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:41:04:904 170 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:41:14:904 180 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:41:24:904 190 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:41:34:904 200 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:41:44:904 210 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:41:54:904 220 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:42:04:904 230 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:42:14:904 240 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:42:24:904 250 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:42:34:904 260 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:42:44:904 270 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:42:54:904 280 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:43:04:904 290 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:43:14:904 300 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:43:24:904 310 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:43:34:904 320 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:43:44:904 330 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:43:54:904 340 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:44:04:904 350 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:44:14:904 360 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:44:24:904 370 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:44:34:904 380 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:44:44:904 390 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:44:54:904 400 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:45:04:904 410 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:45:14:904 420 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:45:24:904 430 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:45:34:904 440 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:45:44:904 450 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:45:54:904 460 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:46:04:904 470 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:46:14:904 480 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:46:24:904 490 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:46:34:904 500 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:46:44:904 510 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:46:54:904 520 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 16:47:04:904 530 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+com.yahoo.ycsb.DBException: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:17 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:20 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:26 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:47:06 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:159)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:86)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:424)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:17 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:20 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:26 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:47:06 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:147)
+	at org.apache.hadoop.hbase.client.HTable.executeMasterCallable(HTable.java:602)
+	at org.apache.hadoop.hbase.client.HTable.getTableDescriptor(HTable.java:578)
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:155)
+	... 3 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1485)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1505)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1711)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:124)
+	... 6 more
+Caused by: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:154)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1436)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1476)
+	... 10 more
+com.yahoo.ycsb.DBException: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:17 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:20 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:26 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:47:06 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:159)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:86)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:424)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:17 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:20 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:38:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:39:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:40:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:04 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:41:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:42:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:43:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:44:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:25 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:45:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:05 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:26 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:46:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 16:47:06 UTC 2018, RpcRetryingCaller{globalStartTime=1545064696125, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:147)
+	at org.apache.hadoop.hbase.client.HTable.executeMasterCallable(HTable.java:602)
+	at org.apache.hadoop.hbase.client.HTable.getTableDescriptor(HTable.java:578)
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:155)
+	... 3 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1485)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1505)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1711)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:124)
+	... 6 more
+Caused by: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:154)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1436)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1476)
+	... 10 more
+2018-12-17 16:47:06:313 531 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+[OVERALL], RunTime(ms), 531410
+[OVERALL], Throughput(ops/sec), 0.0
+[TOTAL_GCS_PS_Scavenge], Count, 2
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 11
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.0020699648105982197
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 2
+[TOTAL_GC_TIME], Time(ms), 11
+[TOTAL_GC_TIME_%], Time(%), 0.0020699648105982197
+[WARN]  The 'hbase10' client has been deprecated because HBase 1.0 is EOM. If you are using HBase 1.2+ try using the 'hbase12' client instead.
+java -cp /usr/local/ycsb-0.14.0/hbase10-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/protobuf-java-2.5.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-compress-1.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/paranamer-2.3.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/findbugs-annotations-1.3.9-1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-lang-2.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-httpclient-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jaxb-api-2.2.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/htrace-core-3.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-util-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-net-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/log4j-1.2.17.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jcodings-1.0.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-codec-1.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-auth-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-logging-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-cli-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jetty-util-6.1.26.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-annotations-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-mapper-asl-1.8.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-all-4.0.23.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpcore-4.2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-math3-3.1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-protocol-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/guava-12.0.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-el-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/activation-1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-annotations-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-collections-3.2.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-mapreduce-client-core-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsr305-1.3.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-log4j12-1.7.7.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-configuration-1.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-1.7.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-digester-1.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/avro-1.7.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xz-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/snappy-java-1.0.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-io-2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/joni-2.1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-client-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase10-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-3.6.2.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-common-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpclient-4.2.5.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsch-0.1.42.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-api-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xmlenc-0.52.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-core-1.8.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/stax-api-1.0-2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/zookeeper-3.4.6.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=500000 -p columnfamily=family -load
+Command line: -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=500000 -p columnfamily=family -load
+YCSB Client 0.14.0
+
+Loading workload...
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting test.
+2018-12-17 18:08:44:210 0 sec: 0 operations; est completion in 0 second 
+2018-12-17 18:08:54:174 10 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:09:04:173 20 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:09:14:173 30 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:09:24:173 40 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:09:34:173 50 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:09:44:173 60 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:09:54:173 70 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:10:04:173 80 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:10:14:173 90 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:10:24:173 100 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:10:34:173 110 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:10:44:173 120 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:10:54:173 130 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:11:04:173 140 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:11:14:174 150 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:11:24:173 160 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:11:34:173 170 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:11:44:173 180 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:11:54:174 190 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:12:04:173 200 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:12:14:173 210 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:12:24:173 220 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:12:34:173 230 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:12:44:173 240 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:12:54:173 250 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:13:04:173 260 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:13:14:173 270 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:13:24:173 280 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:13:34:173 290 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:13:44:173 300 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:13:54:173 310 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:14:04:173 320 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:14:14:173 330 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:14:24:173 340 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:14:34:173 350 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:14:44:173 360 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:14:54:173 370 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:15:04:173 380 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:15:14:173 390 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:15:24:173 400 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:15:34:174 410 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:15:44:173 420 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:15:54:173 430 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:16:04:173 440 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:16:14:173 450 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:16:24:173 460 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:16:34:173 470 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:16:44:173 480 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:16:54:174 490 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:17:04:173 500 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:17:14:173 510 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:17:24:173 520 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 18:17:34:173 530 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+com.yahoo.ycsb.DBException: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 18:08:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:49 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:03 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:55 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:15 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:55 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:15 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:17:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:17:37 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:159)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:86)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:424)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 18:08:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:49 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:03 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:55 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:15 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:55 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:15 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:17:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:17:37 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:147)
+	at org.apache.hadoop.hbase.client.HTable.executeMasterCallable(HTable.java:602)
+	at org.apache.hadoop.hbase.client.HTable.getTableDescriptor(HTable.java:578)
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:155)
+	... 3 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1485)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1505)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1711)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:124)
+	... 6 more
+Caused by: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:154)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1436)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1476)
+	... 10 more
+com.yahoo.ycsb.DBException: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 18:08:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:49 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:03 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:55 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:15 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:55 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:15 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:17:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:17:37 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:159)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:86)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:424)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 18:08:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:49 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:08:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:03 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:24 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:09:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:10:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:11:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:12:55 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:15 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:13:55 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:15 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:35 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:14:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:15:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:16:56 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:17:16 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 18:17:37 UTC 2018, RpcRetryingCaller{globalStartTime=1545070125740, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:147)
+	at org.apache.hadoop.hbase.client.HTable.executeMasterCallable(HTable.java:602)
+	at org.apache.hadoop.hbase.client.HTable.getTableDescriptor(HTable.java:578)
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:155)
+	... 3 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1485)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1505)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1711)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:124)
+	... 6 more
+Caused by: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:154)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1436)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1476)
+	... 10 more
+2018-12-17 18:17:37:038 532 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+[OVERALL], RunTime(ms), 532865
+[OVERALL], Throughput(ops/sec), 0.0
+[TOTAL_GCS_PS_Scavenge], Count, 2
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 11
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.0020643127246112994
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 2
+[TOTAL_GC_TIME], Time(ms), 11
+[TOTAL_GC_TIME_%], Time(%), 0.0020643127246112994
+[WARN]  The 'hbase10' client has been deprecated because HBase 1.0 is EOM. If you are using HBase 1.2+ try using the 'hbase12' client instead.
+java -cp /usr/local/ycsb-0.14.0/hbase10-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/protobuf-java-2.5.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-compress-1.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/paranamer-2.3.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/findbugs-annotations-1.3.9-1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-lang-2.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-httpclient-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jaxb-api-2.2.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/htrace-core-3.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-util-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-net-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/log4j-1.2.17.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jcodings-1.0.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-codec-1.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-auth-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-logging-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-cli-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jetty-util-6.1.26.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-annotations-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-mapper-asl-1.8.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-all-4.0.23.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpcore-4.2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-math3-3.1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-protocol-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/guava-12.0.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-el-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/activation-1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-annotations-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-collections-3.2.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-mapreduce-client-core-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsr305-1.3.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-log4j12-1.7.7.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-configuration-1.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-1.7.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-digester-1.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/avro-1.7.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xz-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/snappy-java-1.0.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-io-2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/joni-2.1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-client-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase10-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-3.6.2.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-common-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpclient-4.2.5.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsch-0.1.42.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-api-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xmlenc-0.52.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-core-1.8.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/stax-api-1.0-2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/zookeeper-3.4.6.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=500000 -p columnfamily=family -load
+Command line: -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=500000 -p columnfamily=family -load
+YCSB Client 0.14.0
+
+Loading workload...
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting test.
+2018-12-17 20:28:18:128 0 sec: 0 operations; est completion in 0 second 
+2018-12-17 20:28:28:094 10 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:28:38:094 20 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:28:48:094 30 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:28:58:094 40 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:29:08:094 50 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:29:18:094 60 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:29:28:094 70 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:29:38:094 80 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:29:48:094 90 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:29:58:094 100 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:30:08:094 110 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:30:18:094 120 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:30:28:094 130 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:30:38:094 140 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:30:48:094 150 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:30:58:094 160 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:31:08:094 170 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:31:18:094 180 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:31:28:094 190 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:31:38:094 200 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:31:48:094 210 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:31:58:094 220 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:32:08:094 230 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:32:18:094 240 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:32:28:094 250 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:32:38:094 260 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:32:48:094 270 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:32:58:094 280 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:33:08:094 290 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:33:18:094 300 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:33:28:094 310 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:33:38:094 320 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:33:48:094 330 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:33:58:094 340 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:34:08:094 350 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:34:18:094 360 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:34:28:094 370 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:34:38:094 380 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:34:48:094 390 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:34:58:094 400 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:35:08:094 410 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:35:18:094 420 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:35:28:094 430 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:35:38:094 440 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:35:48:094 450 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:35:58:094 460 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:36:08:094 470 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:36:18:094 480 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:36:28:094 490 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:36:38:094 500 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:36:48:094 510 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:36:58:094 520 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 20:37:08:094 530 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+com.yahoo.ycsb.DBException: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 20:28:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:19 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:19 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:20 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:22 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:26 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:57 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:49 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:37:09 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:159)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:86)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:424)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 20:28:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:19 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:19 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:20 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:22 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:26 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:57 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:49 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:37:09 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:147)
+	at org.apache.hadoop.hbase.client.HTable.executeMasterCallable(HTable.java:602)
+	at org.apache.hadoop.hbase.client.HTable.getTableDescriptor(HTable.java:578)
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:155)
+	... 3 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1485)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1505)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1711)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:124)
+	... 6 more
+Caused by: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:154)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1436)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1476)
+	... 10 more
+com.yahoo.ycsb.DBException: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 20:28:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:19 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:19 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:20 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:22 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:26 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:57 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:49 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:37:09 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:159)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:86)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:424)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 20:28:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:18 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:19 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:19 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:20 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:22 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:26 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:36 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:28:57 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:29:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:30:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:07 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:27 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:31:47 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:32:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:33:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:34:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:35:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:08 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:28 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:36:49 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 20:37:09 UTC 2018, RpcRetryingCaller{globalStartTime=1545078498778, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:147)
+	at org.apache.hadoop.hbase.client.HTable.executeMasterCallable(HTable.java:602)
+	at org.apache.hadoop.hbase.client.HTable.getTableDescriptor(HTable.java:578)
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:155)
+	... 3 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1485)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1505)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1711)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:124)
+	... 6 more
+Caused by: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:154)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1436)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1476)
+	... 10 more
+2018-12-17 20:37:09:233 531 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+[OVERALL], RunTime(ms), 531139
+[OVERALL], Throughput(ops/sec), 0.0
+[TOTAL_GCS_PS_Scavenge], Count, 2
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 16
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.003012394119053581
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 2
+[TOTAL_GC_TIME], Time(ms), 16
+[TOTAL_GC_TIME_%], Time(%), 0.003012394119053581
+[WARN]  The 'hbase10' client has been deprecated because HBase 1.0 is EOM. If you are using HBase 1.2+ try using the 'hbase12' client instead.
+java -cp /usr/local/ycsb-0.14.0/hbase10-binding/conf:/usr/local/ycsb-0.14.0/conf:/usr/local/ycsb-0.14.0/lib/HdrHistogram-2.1.4.jar:/usr/local/ycsb-0.14.0/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/core-0.14.0.jar:/usr/local/ycsb-0.14.0/lib/jackson-mapper-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/lib/htrace-core4-4.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/protobuf-java-2.5.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-compress-1.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/paranamer-2.3.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/findbugs-annotations-1.3.9-1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-lang-2.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-httpclient-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jaxb-api-2.2.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/htrace-core-3.1.0-incubating.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-util-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-net-3.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/log4j-1.2.17.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jcodings-1.0.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-codec-1.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-auth-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-logging-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-cli-1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jetty-util-6.1.26.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-annotations-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-mapper-asl-1.8.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-all-4.0.23.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpcore-4.2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-math3-3.1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-protocol-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/guava-12.0.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-el-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/activation-1.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-annotations-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-collections-3.2.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-api-1.7.25.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-mapreduce-client-core-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-common-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jackson-core-asl-1.9.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsr305-1.3.9.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/slf4j-log4j12-1.7.7.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-configuration-1.6.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-1.7.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-digester-1.8.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/avro-1.7.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xz-1.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/snappy-java-1.0.4.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-io-2.4.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/joni-2.1.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-client-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase10-binding-0.14.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/netty-3.6.2.Final.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hbase-common-1.0.2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/httpclient-4.2.5.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/jsch-0.1.42.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/hadoop-yarn-api-2.5.1.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/xmlenc-0.52.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/commons-beanutils-core-1.8.0.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/stax-api-1.0-2.jar:/usr/local/ycsb-0.14.0/hbase10-binding/lib/zookeeper-3.4.6.jar com.yahoo.ycsb.Client -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=500000 -p columnfamily=family -load
+Command line: -db com.yahoo.ycsb.db.HBaseClient10 -s -P workloads/workloada -p recordcount=500000 -p columnfamily=family -load
+YCSB Client 0.14.0
+
+Loading workload...
+ (might take a few minutes for large data sets)
+log4j:WARN No appenders could be found for logger (org.apache.htrace.core.Tracer).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting test.
+2018-12-17 22:27:39:913 0 sec: 0 operations; est completion in 0 second 
+2018-12-17 22:27:49:522 10 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:27:59:521 20 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:28:09:521 30 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:28:19:521 40 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:28:29:521 50 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:28:39:521 60 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:28:49:521 70 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:28:59:521 80 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:29:09:521 90 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:29:19:521 100 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:29:29:521 110 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:29:39:521 120 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:29:49:521 130 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:29:59:521 140 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:30:09:521 150 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:30:19:521 160 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:30:29:521 170 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:30:39:521 180 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:30:49:521 190 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:30:59:521 200 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:31:09:521 210 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:31:19:521 220 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:31:29:521 230 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:31:39:521 240 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:31:49:521 250 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:31:59:521 260 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:32:09:521 270 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:32:19:521 280 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:32:29:521 290 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:32:39:521 300 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:32:49:521 310 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:32:59:521 320 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:33:09:521 330 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:33:19:521 340 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:33:29:521 350 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:33:39:521 360 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:33:49:521 370 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:33:59:521 380 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:34:09:521 390 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:34:19:521 400 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:34:29:521 410 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:34:39:521 420 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:34:49:521 430 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:34:59:521 440 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:35:09:521 450 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:35:19:521 460 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:35:29:521 470 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:35:39:521 480 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:35:49:521 490 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:35:59:521 500 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:36:09:521 510 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:36:19:521 520 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+2018-12-17 22:36:29:521 530 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+com.yahoo.ycsb.DBException: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:02 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:22 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:36:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:36:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:159)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:86)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:424)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:02 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:22 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:36:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:36:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:147)
+	at org.apache.hadoop.hbase.client.HTable.executeMasterCallable(HTable.java:602)
+	at org.apache.hadoop.hbase.client.HTable.getTableDescriptor(HTable.java:578)
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:155)
+	... 3 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1485)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1505)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1711)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:124)
+	... 6 more
+Caused by: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:154)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1436)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1476)
+	... 10 more
+com.yahoo.ycsb.DBException: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:02 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:22 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:36:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:36:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:159)
+	at com.yahoo.ycsb.DBWrapper.init(DBWrapper.java:86)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:424)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.hadoop.hbase.client.RetriesExhaustedException: Failed after attempts=35, exceptions:
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:44 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:45 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:46 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:48 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:27:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:02 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:22 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:28:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:29:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:30:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:12 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:32 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:31:52 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:32:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:33:53 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:13 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:33 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:34:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:35:54 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:36:14 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+Mon Dec 17 22:36:34 UTC 2018, RpcRetryingCaller{globalStartTime=1545085664002, pause=100, retries=35}, org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:147)
+	at org.apache.hadoop.hbase.client.HTable.executeMasterCallable(HTable.java:602)
+	at org.apache.hadoop.hbase.client.HTable.getTableDescriptor(HTable.java:578)
+	at com.yahoo.ycsb.db.HBaseClient10.init(HBaseClient10.java:155)
+	... 3 more
+Caused by: org.apache.hadoop.hbase.MasterNotRunningException: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1485)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1505)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1711)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:124)
+	... 6 more
+Caused by: java.io.IOException: Can't get master address from ZooKeeper; znode data == null
+	at org.apache.hadoop.hbase.zookeeper.MasterAddressTracker.getMasterAddress(MasterAddressTracker.java:154)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1436)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1476)
+	... 10 more
+2018-12-17 22:36:34:528 535 sec: 0 operations; est completion in 106751991167300 days 15 hours 
+[OVERALL], RunTime(ms), 535008
+[OVERALL], Throughput(ops/sec), 0.0
+[TOTAL_GCS_PS_Scavenge], Count, 3
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 30
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.005607392786649919
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 3
+[TOTAL_GC_TIME], Time(ms), 30
+[TOTAL_GC_TIME_%], Time(%), 0.005607392786649919
